@@ -1,1 +1,205 @@
-hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>The Edible Apple</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato|Passion+One|Roboto|Patua+One');
+      #banner {
+        background-color: black;
+        background-image: url("banner.png");
+        background-repeat: no-repeat;
+        background-size: 100% 80px;
+        height: 80px;
+        width: 100%;
+        position: relative;
+      }
+      #logo {
+        width: 65px;
+        height: 65px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: width 0.2s, height 0.2s;
+      }
+      #logo:hover {
+        width: 70px;
+        height: 70px;
+      }
+      #iconLeft, #iconRight {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        transition: width 0.2s, height 0.2s;
+      }
+      #iconLeft {
+        left: 0;
+        right: 130px;
+      }
+      #iconRight {
+        left: 130px;
+        right: 0px;
+      }
+      #iconLeft:hover, #iconRight:hover {
+        width: 30px;
+        height: 30px;
+      }
+      img {
+        margin: 0px;
+      }
+      body {
+        margin: 0px;
+      }
+      .post {
+        text-align: center;
+      }
+      .post h1 {
+        margin-top: 0px;
+        font-family: 'Passion One', impact;
+        margin-bottom: 0px;
+      }
+      .post p {
+        font-family: 'Roboto', sans-serif;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      #end {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        color: gray;
+      }
+      .post a {
+        font-family: 'Lato', sans-serif;
+        color: gray;
+        text-decoration: none;
+        transition: color .4s;
+      }
+      .post a:hover {
+        color: black;
+        cursor: grab;
+      }
+      .post #date {
+        font-size: 12px;
+      }
+      button {
+        font-family: "Lato", sans-serif;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        font-size: 20px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        transition: background-color 0.4s;
+      }
+      button:hover {
+        background-color: black;
+      }
+      hr {
+        border: 1px solid lightgray;
+        width: 60%;
+        margin-top: 7px;
+        margin-bottom: 20px;
+      }
+      #loadMoreStories {
+        text-align: center;
+      }
+      #loadMoreStories button {
+        font-size: 25px;
+      }
+      #navbar {
+        height: 40px;
+        width: 100%;
+        background-color: rgb(230, 230, 230);
+        text-align: center;
+        line-height: 40px;
+      }
+      #navbar a {
+        font-family: "Lato", sans-serif;
+        color: rgb(150, 150, 150);
+        text-decoration: none;
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: 18px;
+        transition: color 0.3s;
+      }
+      #navbar a:hover {
+        color: rgb(100, 100, 100);
+      }
+      @media screen and (max-width: 1000px) {
+        h1, h2, h3, h4, h5, h6 {
+          font-family: "Patua One", serif;
+        }
+        .post h1 {
+          font-family: "Patua One", serif;
+          font-size: 60px;
+        }
+        .post a {
+          font-size: 30px;
+        }
+        .post p {
+          font-size: 50px;
+        }
+        #banner {
+          height: 150px;
+          background-size: cover;
+        }
+        #logo {
+          width: 120px;
+          height: 120px;
+        }
+        #logo:hover {
+          width: 130px;
+          height: 130px;
+        }
+        #iconLeft {
+          right: 200px;
+        }
+        #iconRight {
+          left: 200px;
+        }
+        #iconLeft, #iconRight {
+          width: 50px;
+          height: 50px;
+        }
+        #iconLeft:hover, #iconRight:hover {
+          width: 55px;
+          height: 55px;
+        }
+        #navbar {
+          height: 80px;
+          line-height: 80px;
+        }
+        #navbar a {
+          font-size: 40px;
+        }
+        button {
+          font-size: 40px;
+        }
+        #end {
+          font-size: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <a href="/"><img id="logo" src="logo.png"></img></a>
+    </div>
+    <div id="navbar">
+      <a href="reviews">Reviews</a>
+      <a href="authors">Authors</a>
+      <a href="goal">Our Goal</a>
+    </div>
+    <br>
+  </body>
+</html>
